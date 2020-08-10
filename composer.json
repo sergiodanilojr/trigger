@@ -1,0 +1,31 @@
+{
+  "name": "elephpant/trigger",
+  "description": "Trigger is the absurdly easy way to communicate with the user of your application through highly customizable messages",
+  "keywords": [
+    "Sergio Danilo Jr",
+    "trigger",
+    "notify",
+    "message",
+    "alert",
+    "elephpant",
+    "elephant"
+  ],
+  "homepage": "https://www.sergiodanilojr.com.br",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sérgio Danilo Jr.",
+      "email": "sergiodaniojr@hotmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "ElePHPant\\Trigger\\": "src"
+    }
+  }
+}
