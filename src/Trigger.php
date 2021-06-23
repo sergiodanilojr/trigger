@@ -156,11 +156,11 @@ class Trigger
             session_start();
         }
 
-        $_SESSION['flash'] = $this;
+        $_COOKIE['flash'] = $this;
 
-        if (isset($_SESSION['flash'])) {
-            $flash = $_SESSION['flash'];
-            unset($_SESSION["flash"]);
+        if (isset($_COOKIE['flash'])) {
+            $flash = $_COOKIE['flash'];
+            unset($_COOKIE["flash"]);
             return $flash;
         }
 
