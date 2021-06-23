@@ -149,6 +149,23 @@ class Trigger
         return $this;
     }
 
+    public function flash()
+    {
+        if (!session_id()) {
+            session_start();
+        }
+
+        $_SESSION['flash'] = $this;
+
+        if (isset($_SESSION['flash'])) {
+            $flash = $_SESSION['flash'];
+            unset($_SESSION["flash"]);
+            return $flash;
+        }
+
+        return null;
+    }
+
 
     /**
      * @param string $message
