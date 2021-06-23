@@ -154,7 +154,6 @@ class Trigger
         $_COOKIE['flash'] = $this;
     }
 
-
     /**
      * @param string $message
      * @return string
