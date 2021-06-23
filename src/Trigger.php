@@ -151,7 +151,7 @@ class Trigger
 
     public function flash()
     {
-        $_COOKIE['flash'] = $this;
+        $_COOKIE['flash'] = $this->render();
     }
 
     /**
