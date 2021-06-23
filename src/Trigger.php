@@ -149,6 +149,7 @@ class Trigger
         return $this;
     }
 
+
     public function flash()
     {
         if (!session_id()) {
