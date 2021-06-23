@@ -151,19 +151,7 @@ class Trigger
 
     public function flash()
     {
-        if (!session_id()) {
-            session_start();
-        }
-
         $_COOKIE['flash'] = $this;
-
-        if (isset($_COOKIE['flash'])) {
-            $flash = $_COOKIE['flash'];
-            unset($_COOKIE["flash"]);
-            return $flash;
-        }
-
-        return null;
     }
 
 
